@@ -1,3 +1,10 @@
 .header__menu {
     display: inline-block;
+    margin-left: 50px;
+    color: white;
+    font-size: 2rem;
+}
+
+.header__menu:hover {
+    cursor: pointer;
 }

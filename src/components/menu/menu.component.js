@@ -9,21 +9,15 @@ class Menu extends Component {
         };
         this.handleClick = this.handleClick.bind(this);
     }
-    handleClick() {
-        const active = this.state.value;
-        this.setState({value : active === 'X' ? 'O' : 'X'});
+    handleClick(e) {
+        this.props.onChangeMenu(e.target.innerHTML);
     }
     render() {
         return(
-            <div
-                className={style.header__menu}
-            >
-                <div
-                    onClick={this.handleClick}
-                 >
-                    {this.state.value}
+            <div className={style.header__menu}>
+                <div onClick={this.handleClick}>
+                    {this.props.value}
                  </div>
-                {this.state.value === "O" ? <p>ALERT</p> : ""}
             </div>
         )
     }
