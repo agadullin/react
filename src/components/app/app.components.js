@@ -13,7 +13,6 @@ class App extends Component {
     }
     onChangeState(){
         const value = this.state.valueMenu === "X" ? 'O' : 'X';
-        console.log(this.state.valueMenu);
         this.setState({valueMenu: value});
     }
     render() {

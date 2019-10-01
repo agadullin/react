@@ -1,0 +1,10 @@
+.auth__user {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.auth__user:hover{
+    cursor: pointer;
+    border-bottom: 2px white solid;
+    margin-bottom: -2px;
+}
